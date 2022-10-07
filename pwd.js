@@ -1,6 +1,6 @@
 
 				document.getElementById("pwd").addEventListener('keydown', function(event){
 					if(event.keyCode == 13){
-						window.location.href = "ptft.tk/home";
+						window.location.href = "home";
 					}
 				})
