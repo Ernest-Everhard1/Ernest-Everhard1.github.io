@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+	@font-face {
+  		font-family: analog;
+  		src: url(Analog.ttf);
+	}
+	h1{
+		color: green;
+		font-family: analog;
+	}
+	.center-screen {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		min-height: 100vh;
+	}
+	.grid-container {
+	  display: grid;
+	  grid-template-columns: auto auto auto;
+	  background-color: #00A70A;
+	  padding: 10px;
+	}
+	.grid-item {
+	  background-color: rgba(0, 135, 0, 0.8);
+	  border: 1px solid rgba(0, 0, 0, 0.8);
+	  padding: 20px;
+	  font-size: 30px;
+	  font-family: analog;
+	  text-align: center;
+	}
+</style>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PTFT - INDEX</title>
+</head>
+<body style="background-color: black;">
+	<h1>PROTECTIVE TASK FORCE TEAM</h1>
+	<div class="grid-container">
+	<button class="grid-item" id="doc">PIT DOCUMENTATION</button>
+	<button class="grid-item" id="safe">PIT SAFTEY</button>
+	<button class="grid-item" id="anom">PIT ANOMALIES</button> 
+	</div>
+	<div>
+		<p id = "Content" style="text-align: center; font-family: analog; color: green; font-size: 150%;">
+			WELCOME TO THE PIT, USER<br>
+			PLEASE REPORT ANY FINDINGS TO A VOID RESEARCHER<br>
+			SO THIS PAGE CAN BE UPDATED.
+		</p>
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+	var ContentDiv = document.getElementById("Content")
+	var Doc = document.getElementById("doc")
+	var Safe = document.getElementById("safe")
+	var Anom = document.getElementById("anom")
+	Doc.onclick = function(){
+		ContentDiv.innerHTML = "			INSERT PIT STUFF HERE<br> unwritten<br>"
+	}
+	Safe.onclick = function(){
+		ContentDiv.innerHTML = "			INSERT PIT STUFF HERE<br> unwritten<br>"
+	}
+	Anom.onclick = function(){
+		ContentDiv.innerHTML = "			INSERT PIT STUFF HERE<br> unwritten<br>"
+	}
+</script>
